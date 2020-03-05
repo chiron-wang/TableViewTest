@@ -36,10 +36,11 @@ class LoverTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-    @IBSegueAction func showDetail(_ coder: NSCoder) -> LoverDetailViewController? {
+    @IBSegueAction func showDetail(_ coder: NSCoder) -> LoverDetailTableViewController? {
         if let row = tableView.indexPathForSelectedRow?.row {
+            print("showDetail")
             let lover = lovers[row]
-            return LoverDetailViewController(coder: coder, lover: lover)
+            return LoverDetailTableViewController(coder: coder, lover: lover)
         } else {
             return nil
         }

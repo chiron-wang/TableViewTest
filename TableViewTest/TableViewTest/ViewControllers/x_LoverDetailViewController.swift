@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoverDetailViewController: UIViewController {
+class x_LoverDetailViewController: UIViewController {
     
     let lover: Lover
     
