@@ -7,12 +7,18 @@ UITableView test lab.
 練習如何點選Cell後，說出對應的文字
 
 ## Lover
-![image](https://github.com/chiron-wang/TableViewTest/blob/master/images/Lover.png)
+### List/Edit/Add
+![image](https://github.com/chiron-wang/TableViewTest/blob/master/images/LoverAll.png)
+* 課堂中的幾個相關練習，Cell, Model建立，轉場以及傳值
 * 設定所有cell的高度
 * IBSegueAction
+* unwindToLoverTableView (分為新增/修改)
 * viewWithTag()
-* convert(:to:)
-課堂中的幾個相關練習，Cell, Model建立，轉場以及傳值
+* convert(:to:)課堂中的幾個相關練習，Cell, Model建立，轉場以及傳值
+* TableView直接拉入View，當作Header (Edit頁面)
+* 自訂HeaderView，繼承自『UITableViewHeaderFooterView』(Add頁面)
+* TableView內註冊自訂HeaderView
+* tableView的deleteRow
 
 ## AutoLayoutCell
 ![image](https://github.com/chiron-wang/TableViewTest/blob/master/images/AutoLayoutCell.png)
