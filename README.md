@@ -8,7 +8,7 @@ UITableView test lab.
 
 ## Lover
 ### List/Edit/Add
-![image](https://github.com/chiron-wang/TableViewTest/blob/master/images/LoverAll.png)
+![image](https://github.com/chiron-wang/TableViewTest/blob/master/images/LoverAll.jpg)
 * 課堂中的幾個相關練習，Cell, Model建立，轉場以及傳值
 * 設定所有cell的高度
 * IBSegueAction
