@@ -1,5 +1,5 @@
 //
-//  LoverDetailTableViewController.swift
+//  LoverEditTableViewController.swift
 //  TableViewTest
 //
 //  Created by mikewang on 2020/3/5.
@@ -8,11 +8,17 @@
 
 import UIKit
 
-class LoverDetailTableViewController: UITableViewController {
+class LoverEditTableViewController: UITableViewController {
     
-    let lover: Lover
+    var lover: Lover?
     
-    required init?(coder: NSCoder, lover: Lover) {
+    @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var genderSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var introTextField: UITextField!
+    @IBOutlet weak var innerBeautySwitch: UISwitch!
+    
+    init?(coder: NSCoder, lover: Lover? = nil) {
         self.lover = lover
         super.init(coder: coder)
     }
@@ -24,12 +30,45 @@ class LoverDetailTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        configUI()
     }
+    
+    private func configUI() {
+        guard let lover = lover else { return }
+        nameTextField.text = lover.name
+        introTextField.text = lover.intro
+        genderSegmentedControl.selectedSegmentIndex = lover.gender == "male" ? 0 : 1
+        photoImageView.image = UIImage(named: lover.imageName)
+        innerBeautySwitch.isOn = lover.hasInnerBeauty
+    }
+    
+    private func getErrors() -> [String] {
+        var result: [String] = []
+        if nameTextField.text?.isBlank == true {
+            result.append("名字")
+        }
+        if introTextField.text?.isBlank == true {
+            result.append("簡介")
+        }
+        return result
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        let errors = getErrors()
+        
+        if errors.count > 0 {
+            let errorStr = errors.joined(separator: ",")
+            let alertController = UIAlertController(title: errorStr, message: " 不得為空", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alertController, animated: true, completion: nil)
+            
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    
 
     // MARK: - Table view data source
 
@@ -88,14 +127,19 @@ class LoverDetailTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let id = lover?.id ?? 0
+        let name = nameTextField.text ?? ""
+        let intro = introTextField.text ?? ""
+        let imageName = lover?.imageName ?? "pic1"
+        let genderIndex = genderSegmentedControl.selectedSegmentIndex
+        let gender = genderSegmentedControl.titleForSegment(at: genderIndex)?.lowercased() ?? "male"
+        let innerBeauty = innerBeautySwitch.isOn
+        
+        lover = Lover(id: id, name: name, intro: intro, imageName: imageName , gender: gender, hasInnerBeauty: innerBeauty)
     }
-    */
-
+    
 }

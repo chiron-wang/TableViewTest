@@ -16,7 +16,6 @@
 		27165FC923FA4FFE0098E2D0 /* LyricsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27165FC823FA4FFE0098E2D0 /* LyricsTableViewController.swift */; };
 		27165FCB23FD1B5C0098E2D0 /* LoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27165FCA23FD1B5C0098E2D0 /* LoverTableViewController.swift */; };
 		27165FCE23FD1D280098E2D0 /* Lover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27165FCD23FD1D280098E2D0 /* Lover.swift */; };
-		27165FD023FD670B0098E2D0 /* x_LoverDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27165FCF23FD670B0098E2D0 /* x_LoverDetailViewController.swift */; };
 		27165FD223FE01170098E2D0 /* FemaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27165FD123FE01170098E2D0 /* FemaleTableViewCell.swift */; };
 		27165FD423FE46E60098E2D0 /* ManTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27165FD323FE46E60098E2D0 /* ManTableViewCell.swift */; };
 		276F879923FEA7FF007C65C7 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276F879823FEA7FF007C65C7 /* MovieTableViewController.swift */; };
@@ -27,7 +26,10 @@
 		276F87A42400268F007C65C7 /* ReOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276F87A32400268F007C65C7 /* ReOrderTableViewController.swift */; };
 		276F87A6240026FD007C65C7 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276F87A5240026FD007C65C7 /* Food.swift */; };
 		27AA6CC02411180100589C35 /* Lover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AA6CBF2411180100589C35 /* Lover.storyboard */; };
-		27AA6CC224111A0500589C35 /* LoverDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA6CC124111A0500589C35 /* LoverDetailTableViewController.swift */; };
+		27AA6CC224111A0500589C35 /* LoverEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA6CC124111A0500589C35 /* LoverEditTableViewController.swift */; };
+		27AA6CC52411E77900589C35 /* String+isBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA6CC42411E77900589C35 /* String+isBlank.swift */; };
+		27C480932412A306008925BF /* LoverAddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C480922412A306008925BF /* LoverAddTableViewController.swift */; };
+		27C4809624140198008925BF /* LoverHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4809524140198008925BF /* LoverHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +44,6 @@
 		27165FC823FA4FFE0098E2D0 /* LyricsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsTableViewController.swift; sourceTree = "<group>"; };
 		27165FCA23FD1B5C0098E2D0 /* LoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoverTableViewController.swift; sourceTree = "<group>"; };
 		27165FCD23FD1D280098E2D0 /* Lover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lover.swift; sourceTree = "<group>"; };
-		27165FCF23FD670B0098E2D0 /* x_LoverDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = x_LoverDetailViewController.swift; sourceTree = "<group>"; };
 		27165FD123FE01170098E2D0 /* FemaleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FemaleTableViewCell.swift; sourceTree = "<group>"; };
 		27165FD323FE46E60098E2D0 /* ManTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManTableViewCell.swift; sourceTree = "<group>"; };
 		276F879823FEA7FF007C65C7 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
@@ -53,7 +54,10 @@
 		276F87A32400268F007C65C7 /* ReOrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReOrderTableViewController.swift; sourceTree = "<group>"; };
 		276F87A5240026FD007C65C7 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		27AA6CBF2411180100589C35 /* Lover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lover.storyboard; sourceTree = "<group>"; };
-		27AA6CC124111A0500589C35 /* LoverDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoverDetailTableViewController.swift; sourceTree = "<group>"; };
+		27AA6CC124111A0500589C35 /* LoverEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoverEditTableViewController.swift; sourceTree = "<group>"; };
+		27AA6CC42411E77900589C35 /* String+isBlank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+isBlank.swift"; sourceTree = "<group>"; };
+		27C480922412A306008925BF /* LoverAddTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoverAddTableViewController.swift; sourceTree = "<group>"; };
+		27C4809524140198008925BF /* LoverHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoverHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +90,10 @@
 		27165FB323FA4FA80098E2D0 /* TableViewTest */ = {
 			isa = PBXGroup;
 			children = (
-				27165FCC23FD1BB30098E2D0 /* ViewControllers */,
+				27AA6CC32411E71A00589C35 /* Extensions */,
 				276F879A23FEA8C4007C65C7 /* Models */,
+				27165FCC23FD1BB30098E2D0 /* ViewControllers */,
+				27C4809424140147008925BF /* Views */,
 				27165FB423FA4FA80098E2D0 /* AppDelegate.swift */,
 				27165FB623FA4FA80098E2D0 /* SceneDelegate.swift */,
 				27165FBA23FA4FA80098E2D0 /* Main.storyboard */,
@@ -95,9 +101,6 @@
 				27165FBD23FA4FC70098E2D0 /* Assets.xcassets */,
 				27165FBF23FA4FC70098E2D0 /* LaunchScreen.storyboard */,
 				27165FC223FA4FC70098E2D0 /* Info.plist */,
-				27165FD123FE01170098E2D0 /* FemaleTableViewCell.swift */,
-				27165FD323FE46E60098E2D0 /* ManTableViewCell.swift */,
-				276F879D23FEB270007C65C7 /* MovieTableViewCell.swift */,
 			);
 			path = TableViewTest;
 			sourceTree = "<group>";
@@ -108,8 +111,8 @@
 				27165FB823FA4FA80098E2D0 /* ViewController.swift */,
 				27165FC823FA4FFE0098E2D0 /* LyricsTableViewController.swift */,
 				27165FCA23FD1B5C0098E2D0 /* LoverTableViewController.swift */,
-				27AA6CC124111A0500589C35 /* LoverDetailTableViewController.swift */,
-				27165FCF23FD670B0098E2D0 /* x_LoverDetailViewController.swift */,
+				27AA6CC124111A0500589C35 /* LoverEditTableViewController.swift */,
+				27C480922412A306008925BF /* LoverAddTableViewController.swift */,
 				276F879823FEA7FF007C65C7 /* MovieTableViewController.swift */,
 				276F879F23FFBB00007C65C7 /* MovieDetailViewController.swift */,
 				276F87A123FFC8A4007C65C7 /* StaticTableViewController.swift */,
@@ -126,6 +129,25 @@
 				276F87A5240026FD007C65C7 /* Food.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		27AA6CC32411E71A00589C35 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				27AA6CC42411E77900589C35 /* String+isBlank.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		27C4809424140147008925BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27165FD123FE01170098E2D0 /* FemaleTableViewCell.swift */,
+				27165FD323FE46E60098E2D0 /* ManTableViewCell.swift */,
+				276F879D23FEB270007C65C7 /* MovieTableViewCell.swift */,
+				27C4809524140198008925BF /* LoverHeader.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,17 +228,19 @@
 				276F879E23FEB270007C65C7 /* MovieTableViewCell.swift in Sources */,
 				27165FCB23FD1B5C0098E2D0 /* LoverTableViewController.swift in Sources */,
 				276F87A023FFBB00007C65C7 /* MovieDetailViewController.swift in Sources */,
+				27C480932412A306008925BF /* LoverAddTableViewController.swift in Sources */,
 				27165FCE23FD1D280098E2D0 /* Lover.swift in Sources */,
 				27165FB523FA4FA80098E2D0 /* AppDelegate.swift in Sources */,
-				27AA6CC224111A0500589C35 /* LoverDetailTableViewController.swift in Sources */,
+				27AA6CC224111A0500589C35 /* LoverEditTableViewController.swift in Sources */,
 				276F87A223FFC8A4007C65C7 /* StaticTableViewController.swift in Sources */,
 				27165FB723FA4FA80098E2D0 /* SceneDelegate.swift in Sources */,
-				27165FD023FD670B0098E2D0 /* x_LoverDetailViewController.swift in Sources */,
 				27165FD423FE46E60098E2D0 /* ManTableViewCell.swift in Sources */,
 				27165FD223FE01170098E2D0 /* FemaleTableViewCell.swift in Sources */,
 				276F87A6240026FD007C65C7 /* Food.swift in Sources */,
 				276F879C23FEA8EA007C65C7 /* Movie.swift in Sources */,
 				27165FC923FA4FFE0098E2D0 /* LyricsTableViewController.swift in Sources */,
+				27AA6CC52411E77900589C35 /* String+isBlank.swift in Sources */,
+				27C4809624140198008925BF /* LoverHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

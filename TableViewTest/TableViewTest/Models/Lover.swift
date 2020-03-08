@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct Lover {
+struct Lover: Equatable {
+    var id: Int
     var name: String
     var intro: String
     var imageName: String
